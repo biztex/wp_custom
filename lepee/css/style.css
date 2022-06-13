@@ -6298,7 +6298,8 @@ a.page-numbers.next {
 }
 
 .content .marker-halfYellow {
-    background: linear-gradient(transparent 60%, #ffffbc 60%)
+    background: linear-gradient(transparent 60%, #ffffbc 60%);
+    font-size: 16px;
 }
 
 .content .marker-halfPink {
@@ -11910,5 +11911,65 @@ input[name=widgetTab__item] {
     }
     .t-headerCenter .menuBtn {
         right: 15px
+    }
+}
+
+.content .shiny-btn4 {
+    display: block;
+    position: relative;
+    width: 80%;
+    /*ボタンの幅*/
+    padding: 10px 0;
+    margin: 30px auto;
+    background-color: #ff7f00;
+    /*ボタンの色*/
+    box-shadow: 0 3px 0 0 #C76505;
+    /*影の色(rgbaの値を変更)*/
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.content .shiny-btn4:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+    box-shadow: none;
+    -webkit-transform: translateY(3px);
+}
+
+.content .shiny-btn4::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn4 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes shiny-btn4 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
     }
 }
