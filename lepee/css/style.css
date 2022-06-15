@@ -220,15 +220,18 @@ ul.footer-menu li {
     display: inline;
 }
 
+footer {
+    padding: 20px
+}
+
 .footer-menu a {
     text-decoration: none;
     color: white;
 }
 
-.footer-text a {
-    text-decoration: none;
-    color: white;
-    float: left;
+.footer-text ul {
+    text-align: left;
+    padding: 10px 0;
 }
 
 .body {
@@ -6636,6 +6639,12 @@ a.page-numbers.next {
 
 .content .es-strike {
     text-decoration: line-through
+}
+
+@media screen and (max-width: 500px) {
+    .tableScroll img.alignnone {
+        width: 90px;
+    }
 }
 
 .content .es-under,
