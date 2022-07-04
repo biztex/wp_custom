@@ -6641,6 +6641,15 @@ a.page-numbers.next {
     text-decoration: line-through
 }
 
+.content .table {
+    overflow-x: hidden;
+}
+
+.content .table table {
+    white-space: inherit;
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 500px) {
     .tableScroll img.alignnone {
         width: 90px;
