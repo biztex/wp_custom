@@ -5887,6 +5887,16 @@ a.page-numbers.next {
     position: relative
 }
 
+.content .accordionBox dt::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
 .content .accordionBox dt::after,
 .content blockquote::before {
     position: absolute;
@@ -5894,16 +5904,19 @@ a.page-numbers.next {
 }
 
 .content .accordionBox dt::after {
-    content: "\ea0c";
-    top: 50%;
-    right: 10px;
+    content: '';
+    height: 10px;
+    width: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 52%;
+    right: 14px;
     margin-top: -.5rem;
-    font-size: 1rem;
-    line-height: 1
+    transition: 0.5s;
 }
 
 .content .accordionBox dt.current::after {
-    content: "\ea0d"
+    transform: rotate(90deg);
 }
 
 .content .accordionBox-border dt {
